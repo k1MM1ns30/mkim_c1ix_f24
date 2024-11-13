@@ -1,0 +1,440 @@
+
+
+div a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    display: inline-block;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    font-size: 40px;
+    font-family:"young serif";
+    color: rgb(5, 5, 5);
+    display: block;
+    padding: 5px;
+    
+  }
+  
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:0;
+    margin:0;
+    height: auto;
+    z-index: 1;
+}
+
+.text-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.text-list li {
+    font-family:"young serif";
+    font-size: 100px;
+    left: 0;
+    top: 50%;
+    cursor: pointer;
+    padding:0;
+    margin-bottom: 200px;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0;
+    
+}
+
+.text-list li:hover{
+    text-align: center;
+    font-family:"bianzhidai"
+}
+
+.ams, .seo, .lon, .new {
+    align-self: flex-start; 
+}
+
+.tok, .hon, .bar {
+    align-self: flex-end;
+}
+  
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.young{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  @font-face{
+    font-family: "bianzhidai";
+    src: url("bianzhidai_COLR-grid.woff") format("woff")
+  }
+
+@font-face {
+    font-family: "Young Serif";
+    src: url("YoungSerif-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    color:rgb(1, 1, 1);
+    font-size: 40px;
+    padding: 0px 10px 10px 10px;
+  }
+
+.animation-blur {
+    animation: backgroundAnimation 13s infinite linear; /* 13초 동안 애니메이션 실행 */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 애니메이션이 배경처럼 보이도록 z-index 설정 */
+    filter: blur(10px); /* 블러 효과 적용 */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    font-family: "young serif";
+}
+
+.title a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 .title의 색상 상속 */
+    font-family: inherit; /* 부모 .title의 폰트 상속 */
+    display: inline-block;
+}
+
+.title:hover a {
+    color: #ffacc8; /* hover 시 텍스트 색상 변경 */
+}
+
+
+@keyframes backgroundAnimation {
+
+    0% {
+        background: radial-gradient(circle at center, #FFDEE9 0%, transparent 5%);
+    }
+    1% {
+        background: radial-gradient(circle at center, #FFDEE9 1%, transparent 6%);
+    }
+    2% {
+        background: radial-gradient(circle at center, #FFDEE9 2%, transparent 7%);
+    }
+    3% {
+        background: radial-gradient(circle at center, #FFDEE9 3%, transparent 8%);
+    }
+    4% {
+        background: radial-gradient(circle at center, #FFDEE9 4%, transparent 9%);
+    }
+    5% {
+        background: radial-gradient(circle at center, #FFDEE9 5%, transparent 10%);
+    }
+    6% {
+        background: radial-gradient(circle at center, #FFDEE9 6%, transparent 11%);
+    }
+    7% {
+        background: radial-gradient(circle at center, #FFDEE9 7%, transparent 12%);
+    }
+    8% {
+        background: radial-gradient(circle at center, #FFDEE9 8%, transparent 13%);
+    }
+    9% {
+        background: radial-gradient(circle at center, #FFDEE9 9%, transparent 14%);
+    }
+    10% {
+        background: radial-gradient(circle at center, #FFDEE9 10%, transparent 15%);
+    }
+    11% {
+        background: radial-gradient(circle at center, #FFDEE9 11%, transparent 16%);
+    }
+    12% {
+        background: radial-gradient(circle at center, #FFDEE9 12%, transparent 17%);
+    }
+    13% {
+        background: radial-gradient(circle at center, #FFDEE9 13%, transparent 18%);
+    }
+    14% {
+        background: radial-gradient(circle at center, #FFDEE9 14%, transparent 19%);
+    }
+    15% {
+        background: radial-gradient(circle at center, #FFDEE9 15%, transparent 20%);
+    }
+    16% {
+        background: radial-gradient(circle at center, #FFDEE9 16%, transparent 21%);
+    }
+    17% {
+        background: radial-gradient(circle at center, #FFDEE9 17%, transparent 22%);
+    }
+    18% {
+        background: radial-gradient(circle at center, #FFDEE9 18%, transparent 23%);
+    }
+    19% {
+        background: radial-gradient(circle at center, #FFDEE9 19%, transparent 24%);
+    }
+    20% {
+        background: radial-gradient(circle at center, #FFDEE9 20%, transparent 25%);
+    }
+    21% {
+        background: radial-gradient(circle at center, #FFDEE9 21%, transparent 26%);
+    }
+    22% {
+        background: radial-gradient(circle at center, #FFDEE9 22%, transparent 27%);
+    }
+    23% {
+        background: radial-gradient(circle at center, #FFDEE9 23%, transparent 28%);
+    }
+    24% {
+        background: radial-gradient(circle at center, #FFDEE9 24%, transparent 29%);
+    }
+    25% {
+        background: radial-gradient(circle at center, #FFDEE9 25%, transparent 30%);
+    }
+    26% {
+        background: radial-gradient(circle at center, #FFDEE9 26%, transparent 31%);
+    }
+    27% {
+        background: radial-gradient(circle at center, #FFDEE9 27%, transparent 32%);
+    }
+    28% {
+        background: radial-gradient(circle at center, #FFDEE9 28%, transparent 33%);
+    }
+    29% {
+        background: radial-gradient(circle at center, #FFDEE9 29%, transparent 34%);
+    }
+    30% {
+        background: radial-gradient(circle at center, #FFDEE9 30%, transparent 35%);
+    }
+    31% {
+        background: radial-gradient(circle at center, #FFDEE9 31%, transparent 36%);
+    }
+    32% {
+        background: radial-gradient(circle at center, #FFDEE9 32%, transparent 37%);
+    }
+    33% {
+        background: radial-gradient(circle at center, #FFDEE9 33%, transparent 38%);
+    }
+    34% {
+        background: radial-gradient(circle at center, #FFDEE9 34%, transparent 39%);
+    }
+    35% {
+        background: radial-gradient(circle at center, #FFDEE9 35%, transparent 40%);
+    }
+    36% {
+        background: radial-gradient(circle at center, #FFDEE9 36%, transparent 41%);
+    }
+    37% {
+        background: radial-gradient(circle at center, #FFDEE9 37%, transparent 42%);
+    }
+    38% {
+        background: radial-gradient(circle at center, #FFDEE9 38%, transparent 43%);
+    }
+    39% {
+        background: radial-gradient(circle at center, #FFDEE9 39%, transparent 44%);
+    }
+    40% {
+        background: radial-gradient(circle at center, #FFDEE9 40%, transparent 45%);
+    }
+    41% {
+        background: radial-gradient(circle at center, #FFDEE9 41%, transparent 46%);
+    }
+    42% {
+        background: radial-gradient(circle at center, #FFDEE9 42%, transparent 47%);
+    }
+    43% {
+        background: radial-gradient(circle at center, #FFDEE9 43%, transparent 48%);
+    }
+    44% {
+        background: radial-gradient(circle at center, #FFDEE9 44%, transparent 49%);
+    }
+    45% {
+        background: radial-gradient(circle at center, #FFDEE9 45%, transparent 50%);
+    }
+    46% {
+        background: radial-gradient(circle at center, #FFDEE9 46%, transparent 51%);
+    }
+    47% {
+        background: radial-gradient(circle at center, #FFDEE9 47%, transparent 52%);
+    }
+    48% {
+        background: radial-gradient(circle at center, #FFDEE9 48%, transparent 53%);
+    }
+    49% {
+        background: radial-gradient(circle at center, #FFDEE9 49%, transparent 54%);
+    }
+    50% {
+        background: radial-gradient(circle at center, #FFDEE9 50%, transparent 55%);
+    }
+    51% {
+        background: radial-gradient(circle at center, #FFDEE9 51%, transparent 56%);
+    }
+    52% {
+        background: radial-gradient(circle at center, #FFDEE9 52%, transparent 57%);
+    }
+    53% {
+        background: radial-gradient(circle at center, #FFDEE9 53%, transparent 58%);
+    }
+    54% {
+        background: radial-gradient(circle at center, #FFDEE9 54%, transparent 59%);
+    }
+    55% {
+        background: radial-gradient(circle at center, #FFDEE9 55%, transparent 60%);
+    }
+    56% {
+        background: radial-gradient(circle at center, #FFDEE9 56%, transparent 61%);
+    }
+    57% {
+        background: radial-gradient(circle at center, #FFDEE9 57%, transparent 62%);
+    }
+    58% {
+        background: radial-gradient(circle at center, #FFDEE9 58%, transparent 63%);
+    }
+    59% {
+        background: radial-gradient(circle at center, #FFDEE9 59%, transparent 64%);
+    }
+    60% {
+        background: radial-gradient(circle at center, #FFDEE9 60%, transparent 65%);
+    }
+    61% {
+        background: radial-gradient(circle at center, #FFDEE9 61%, transparent 66%);
+    }
+    62% {
+        background: radial-gradient(circle at center, #FFDEE9 62%, transparent 67%);
+    }
+    63% {
+        background: radial-gradient(circle at center, #FFDEE9 63%, transparent 68%);
+    }
+    64% {
+        background: radial-gradient(circle at center, #FFDEE9 64%, transparent 69%);
+    }
+    65% {
+        background: radial-gradient(circle at center, #FFDEE9 65%, transparent 70%);
+    }
+    66% {
+        background: radial-gradient(circle at center, #FFDEE9 66%, transparent 71%);
+    }
+    67% {
+        background: radial-gradient(circle at center, #FFDEE9 67%, transparent 72%);
+    }
+    68% {
+        background: radial-gradient(circle at center, #FFDEE9 68%, transparent 73%);
+    }
+    69% {
+        background: radial-gradient(circle at center, #FFDEE9 69%, transparent 74%);
+    }
+    70% {
+        background: radial-gradient(circle at center, #FFDEE9 70%, transparent 75%);
+    }
+    71% {
+        background: radial-gradient(circle at center, #FFDEE9 71%, transparent 76%);
+    }
+    72% {
+        background: radial-gradient(circle at center, #FFDEE9 72%, transparent 77%);
+    }
+    73% {
+        background: radial-gradient(circle at center, #FFDEE9 73%, transparent 78%);
+    }
+    74% {
+        background: radial-gradient(circle at center, #FFDEE9 74%, transparent 79%);
+    }
+    75% {
+        background: radial-gradient(circle at center, #FFDEE9 75%, transparent 80%);
+    }
+    76% {
+        background: radial-gradient(circle at center, #FFDEE9 76%, transparent 81%);
+    }
+    77% {
+        background: radial-gradient(circle at center, #FFDEE9 77%, transparent 82%);
+    }
+    78% {
+        background: radial-gradient(circle at center, #FFDEE9 78%, transparent 83%);
+    }
+    79% {
+        background: radial-gradient(circle at center, #FFDEE9 79%, transparent 84%);
+    }
+    80% {
+        background: radial-gradient(circle at center, #FFDEE9 80%, transparent 85%);
+    }
+    81% {
+        background: radial-gradient(circle at center, #FFDEE9 81%, transparent 86%);
+    }
+    82% {
+        background: radial-gradient(circle at center, #FFDEE9 82%, transparent 87%);
+    }
+    83% {
+        background: radial-gradient(circle at center, #FFDEE9 83%, transparent 88%);
+    }
+    84% {
+        background: radial-gradient(circle at center, #FFDEE9 84%, transparent 89%);
+    }
+    85% {
+        background: radial-gradient(circle at center, #FFDEE9 85%, transparent 90%);
+    }
+    86% {
+        background: radial-gradient(circle at center, #FFDEE9 86%, transparent 91%);
+    }
+    87% {
+        background: radial-gradient(circle at center, #FFDEE9 87%, transparent 92%);
+    }
+    88% {
+        background: radial-gradient(circle at center, #FFDEE9 88%, transparent 93%);
+    }
+    89% {
+        background: radial-gradient(circle at center, #FFDEE9 89%, transparent 94%);
+    }
+    90% {
+        background: radial-gradient(circle at center, #FFDEE9 90%, transparent 95%);
+    }
+    91% {
+        background: radial-gradient(circle at center, #FFDEE9 91%, transparent 96%);
+    }
+    92% {
+        background: radial-gradient(circle at center, #FFDEE9 92%, transparent 97%);
+    }
+    93% {
+        background: radial-gradient(circle at center, #FFDEE9 93%, transparent 98%);
+    }
+    94% {
+        background: radial-gradient(circle at center, #FFDEE9 94%, transparent 99%);
+    }
+    95% {
+        background: radial-gradient(circle at center, #FFDEE9 95%, transparent 100%);
+    }
+    96% {
+        background: radial-gradient(circle at center, #FFDEE9 96%, transparent 100%);
+    }
+    97% {
+        background: radial-gradient(circle at center, #FFDEE9 97%, transparent 100%);
+    }
+    98% {
+        background: radial-gradient(circle at center, #FFDEE9 98%, transparent 100%);
+    }
+    99% {
+        background: radial-gradient(circle at center, #FFDEE9 99%, transparent 100%);
+    }
+    100% {
+        background: radial-gradient(circle at center, #FFDEE9 100%, transparent 100%);
+    }
+}
