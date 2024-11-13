@@ -1,0 +1,190 @@
+
+div a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    display: inline-block;
+}
+
+
+li {
+    font-size: 30px;
+    font-family:"young serif";
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+li:hover ul {
+    display: block;
+    flex-direction: column;
+}
+
+
+li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    width: 130px;
+}
+
+
+li ul li {
+    background-color: rgb(0, 0, 255);
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+    display: block;
+    flex-direction:column;
+    padding: 5px;
+    text-align: left;
+}
+
+
+li ul li:hover {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+}
+
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1; 
+    margin-top: 50px; 
+    width: 100%; 
+    height: auto;
+    padding:0;
+    margin:0;
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+
+
+
+.M1 {
+    font-size: 180px;
+    left: 10%;
+    position: absolute;
+}
+
+.M2 {
+    font-size: 400px;
+    font-weight: bolder;
+    right: 10%;
+    position: absolute;
+}
+.action-button {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 300px; /* 버튼 크기 */
+    height: auto;
+    background-image: url('assets/stat.png'); /* 이미지 배경 설정 */
+    background-size: cover; 
+    background-position: right;
+    z-index:3;
+    border: none; /* 버튼 테두리 제거 */
+    cursor: pointer; /* 마우스 포인터 */
+}
+.main-container:hover .M1{
+     left:calc(10vw - 50px);
+
+}
+
+.main-container:hover .M2{
+    left:calc(10vw - 80px)
+}
+
+
+.main-container:hover .action-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.action-button:hover {
+    filter: invert(1); /* 이미지 색상 반전 */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    font-family: "young serif";
+}
+
+.title a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 .title의 색상 상속 */
+    font-family: inherit; /* 부모 .title의 폰트 상속 */
+    display: inline-block;
+}
+
+.title:hover a {
+    color: rgb(0, 0, 255); /* hover 시 텍스트 색상 변경 */
+}
+
+    
+
+body {
+    background-color: rgb(255, 255, 250);
+	animation-name: bgColor-time-change;
+	animation-duration: 20s;
+    margin-left:0;
+  
+	animation-fill-mode:backwards;
+	
+	animation-iteration-count: infinite;  
+}
+
+
+
+  @keyframes bgColor-time-change {
+    0%   {background-color: rgb(255, 255, 250);}
+    25%  {background-color: #B5FFFC}
+    50%  {background-color: #bcfffd;}
+    75%  {background-color: #6dddff;}
+    100% {background-color: #6ac3ff;}
+    75%  {background-color: #81c6ff;}
+    50%  {background-color: #81e6ff;}
+    25%  {background-color: #cffffd}
+    0%   {background-color: rgb(255, 255, 250);}
+  }
+
+.young{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  @font-face {
+    font-family: "Young Serif";
+    src: url("YoungSerif-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    color:rgb(1, 1, 1);
+    font-size: 40px;
+    padding: 0px 10px 10px 10px;
+}
