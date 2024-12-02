@@ -1,0 +1,281 @@
+
+
+div a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+li {
+  font-size: 30px;
+  font-family:"young serif";
+  position: relative;
+  display: inline-block;
+  
+}
+
+
+li:hover ul,
+li ul:hover {
+  display: block;
+  flex-direction: column;
+}
+
+
+
+li ul {
+  display: none;
+  position: absolute;
+  width: 130px;
+  z-index: 9999;
+}
+
+.list-right li ul {
+  right:0;
+  left: auto;
+}
+
+li ul li {
+  background-color: rgb(78, 146, 255);
+  font-size: 20px;
+  color: rgb(5, 5, 5);
+  display: block;
+  flex-direction:column;
+  padding: 5px;
+  text-align: left;
+}
+
+
+li ul li:hover {
+  background-color: rgb(255, 255, 255);
+  
+  color: rgb(5, 5, 5);
+}
+
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.header:hover{
+  font-weight: bolder;
+}
+
+.header ul li ul li a {
+  color: rgb(5, 5, 5); /* 하위 링크는 검은색 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.header ul li ul li a:hover {
+  font-weight: light; /* 호버 시 글자 두껍게 */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  font-family: "young serif";
+}
+
+.title a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 부모 .title의 색상 상속 */
+  font-family: inherit; /* 부모 .title의 폰트 상속 */
+  display: inline-block;
+}
+
+.title:hover a {
+  color: rgb(78, 146, 255); /* hover 시 텍스트 색상 변경 */
+}
+
+body {
+  background-color:rgb(255, 255, 250);
+  margin: 0;
+  padding: 0;
+}
+
+.alatsi-regular {
+    font-family: "Alatsi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  .young{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  @font-face {
+    font-family: "Young Serif";
+    src: url("YoungSerif-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Director";
+  src: url("Director-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Lineal";
+  src: url("Lineal-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+  
+
+
+
+.container {
+  margin-top: 0px; /* 기존 .tit의 margin-top을 여기에 통합 */
+  display: flex; /* 컨테이너를 플렉스 박스로 설정 */
+  flex-direction: column; /* 헤더를 위에 두고 이미지와 설명을 아래에 배치 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+  width: 100vw;
+}
+
+
+.tit {
+  margin-bottom: 5px; /* 아래 여백 */
+  margin-left: 100px; /* 왼쪽 여백 */
+}
+
+.image-description {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px; /* 제목과 이미지 사이 간격 추가 */
+  margin-left:-100px;
+  width: 100vw;
+  height: 200px;
+}
+
+.image-description a {
+  margin-left: 100px;
+
+}
+
+
+
+.hover-talk {
+  display: none; /* 기본적으로 설명 숨기기 */
+  font-family:"Dierector";
+  text-align:left;
+  font-size: 30px; /* 폰트 크기 조정 */
+  color: rgb(5, 5, 5);
+  width: 600px;
+  margin-left: 50px;
+}
+
+
+.hover-image:hover {
+  filter: blur(10px);
+
+}
+
+.hover-image:hover + .hover-talk {
+  display: block; /* 이미지 hover 시 설명 보이기 */
+
+}
+
+
+.sticker-container {
+  display: flex;
+  justify-content: space-between ; /* 간격을 균등하게 배치 */
+  flex-direction: column;
+  width: 100%; /* 스티커 컨테이너의 너비를 100%로 설정 */
+  margin-top: 100px; /* 큰 이미지와의 간격 설정 */
+  margin-right: 100px;
+  
+}
+
+.sticker1 {
+  width: 400px; /* 스티커의 너비 설정 */
+  height: auto;
+  transition: 40deg;
+  border: 10px solid transparent;
+  margin-left: auto;
+}
+
+.sticker1 img {
+  width: 100%; /* 스티커 이미지의 너비를 부모 요소에 맞춤 */
+  height: auto; /* 비율 유지 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  max-width:600px;
+}
+
+.sticker1:hover {
+  animation: growAndRotate 0.5s ease forwards; /* 애니메이션 적용 */
+  filter:brightness(1.5)
+}
+
+.sticker2 {
+  width: 350px; /* 스티커의 너비 설정 */
+  height: auto;
+  transition: 40deg;
+  border: 10px solid transparent;
+  margin-left: 1000px;
+  margin-top: 50px;
+}
+
+.sticker2 img {
+  width: 100%; /* 스티커 이미지의 너비를 부모 요소에 맞춤 */
+  height: auto; /* 비율 유지 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  max-width:600px;
+}
+
+.sticker2:hover {
+  animation: growandrotate 0.5s ease forwards; /* 애니메이션 적용 */
+  filter:hue-rotate(300deg);
+}
+
+
+@keyframes growAndRotate {
+  0% {
+    transform: rotate(0deg) scale(1); /* 기본 상태 */
+  }
+  100% {
+    transform: rotate(-30deg) scale(1.5); /* 회전하고 확대 */
+  }
+}
+
+@keyframes growandrotate {
+  0% {
+    transform: rotate(0deg) scale(1); /* 기본 상태 */
+  }
+  100% {
+    transform: rotate(30deg) scale(1.5); /* 회전하고 확대 */
+  }
+}
+
+
+
+
+h1{
+  color:rgb(1, 1, 1);
+  font-size: 40px;
+  padding: 0px 10px 10px 10px;
+}
+
+h3{
+  color:black;
+  font-size: 100px;
+  
+}
