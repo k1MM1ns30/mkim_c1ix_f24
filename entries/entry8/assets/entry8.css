@@ -1,0 +1,340 @@
+
+
+div a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  
+  li {
+    font-size: 30px;
+    font-family:"young serif";
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  
+  li:hover ul,
+  li ul:hover {
+    display: block;
+    flex-direction: column;
+  }
+  
+  
+  
+  
+  li ul {
+    display: none;
+    position: absolute;
+    width: 130px;
+    z-index: 9999;
+  }
+  
+  .list-right li ul {
+    right:0;
+    left: auto;
+  }
+  
+
+  li ul li {
+    background-color: rgb(78, 146, 255);
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+    display: block;
+    flex-direction:column;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  
+  li ul li:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+  }
+  
+  
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  
+  .header:hover{
+    font-weight: bolder;
+  }
+  
+  .header ul li ul li a {
+    color: rgb(5, 5, 5); /* 하위 링크는 검은색 */
+    text-decoration: none; /* 밑줄 제거 */
+  }
+  
+  .header ul li ul li a:hover {
+    font-weight: light; /* 호버 시 글자 두껍게 */
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    font-family: "young serif";
+}
+
+.title a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 .title의 색상 상속 */
+    font-family: inherit; /* 부모 .title의 폰트 상속 */
+    display: inline-block;
+}
+
+.title:hover a {
+    color: rgb(78, 146, 255); /* hover 시 텍스트 색상 변경 */
+}
+
+  
+  
+  body {
+    background-color:rgb(255, 255, 250);
+    margin: 0;
+    padding: 0;
+  }
+
+  .young{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: "Young Serif";
+    src: url("YoungSerif-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .noto{
+    font-family: "Noto Sans JP";
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Noto Sans JP";
+    src: url("NotoSansJP-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cjf{
+    font-family: "ChungjuKimsaeng", sans-serif;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "ChungjuKimSaeng";
+    src: url("ChungjuKimSaeng.otf") format("otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+  h1{
+    color:rgb(1, 1, 1);
+    font-size: 40px;
+    padding: 0px 10px 10px 10px;
+  }
+  
+  .hover-image {
+    z-index: 1;
+    display: none; 
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+}
+
+
+.clock-container {
+    z-index: 2; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+    position: absolute;
+}
+
+
+
+.clock{
+    color:rgb(0, 0, 0);
+    
+    font-size: 100px;
+    font-weight: lighter;
+    position: absolute;
+    z-index:2;
+}
+
+
+.clock a{
+    color: inherit; /* 부모의 color 속성 상속 */
+    text-shadow: inherit; /* 부모의 text-shadow 상속 */
+}
+
+.clock.twelve:hover,
+.clock.one:hover,
+.clock.two:hover,
+.clock.three:hover,
+.clock.four:hover,
+.clock.five:hover,
+.clock.six:hover,
+.clock.nine:hover,
+.clock.ten:hover,
+.clock.eleven:hover {
+    color: rgba(255, 255, 255, 0.798); /* 개별 clock 글자를 hover했을 때만 하얀색으로 변경 */
+}
+
+.clock.seven:hover,
+.clock.eight:hover {
+  color:rgba(0, 0, 0, 0.229);
+}
+
+
+
+.twelve{
+    top: 30%;
+ 
+
+}
+
+.one {
+    top: 35%;
+    right: 32%;
+    transform: rotate(32deg);
+
+}
+
+.two {
+    top: 50%;
+    right: 30%;
+
+}
+
+.three {
+    top: 63%;
+    right: 35%;
+    transform: rotate(-30deg)
+
+}
+
+.four {
+    top: 65%;
+
+}
+.five {
+    top: 65%;
+    left: 30%;
+
+    
+}
+
+.six {
+    top: 65%;
+    left: 15%;
+
+}
+
+
+.seven {
+    top: 65%;
+    left: 0%;
+
+}
+
+.eight {
+    top: 15%;
+    right: 0%;
+
+}
+    
+.nine {
+    top: 15%;
+    right: 15%;
+ 
+}
+
+.ten {
+    top: 15%;
+    right: 30%;
+
+
+}
+
+
+.eleven {
+    top: 15%;
+    left: 44%;
+}
+
+
+.clock.twelve:hover ~ .hover-image:first-of-type {
+    display: block; 
+    width: 1200px;
+}
+
+.clock.one:hover ~ .hover-image:nth-of-type(2) {
+    display: block; 
+    width: 1200px;
+}
+.clock.two:hover ~ .hover-image:nth-of-type(3) {
+    display: block; 
+    width: 1200px;
+}
+.clock.three:hover ~ .hover-image:nth-of-type(4) {
+    display: block; 
+    width:1200px;
+}
+
+.clock.four:hover ~ .hover-image:nth-of-type(5) {
+    display: block; 
+    width:1200px;
+}
+.clock.five:hover ~ .hover-image:nth-of-type(6) {
+    display: block; 
+    width:1200px;
+}
+.clock.six:hover ~ .hover-image:nth-of-type(7) {
+    display: block; 
+    width: 1200px;
+}
+
+.clock.seven:hover ~ .hover-image:nth-of-type(8) {
+    display: block; 
+    width:1200px;
+}
+.clock.eight:hover ~ .hover-image:nth-of-type(9) {
+    display: block; 
+    width: 700px;
+}
+.clock.nine:hover ~ .hover-image:nth-of-type(10) {
+    display: block; 
+    width: 1200px;
+}
+.clock.ten:hover ~ .hover-image:nth-of-type(11) {
+    display: block; 
+    width:1000px;
+}
+.clock.eleven:hover ~ .hover-image:nth-of-type(12) {
+    display: block; 
+    width:1200px;
+}
