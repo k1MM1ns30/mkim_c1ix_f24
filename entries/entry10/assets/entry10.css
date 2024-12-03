@@ -36,7 +36,7 @@ li ul {
 }
 
 li ul li {
-  background-color: rgb(78, 146, 255);
+  background-color: rgb(77, 255, 157);
   font-size: 20px;
   color: rgb(5, 5, 5);
   display: block;
@@ -97,7 +97,7 @@ ul {
 }
 
 .title:hover a {
-  color: rgb(78, 146, 255); /* hover 시 텍스트 색상 변경 */
+  color: rgb(77, 255, 157);
 }
 
 body {
@@ -238,11 +238,13 @@ body {
 .hover-talk_2 {
   display: none; /* 기본적으로 설명 숨기기 */
   font-family:"Dierector";
+  font-weight:bolder;
   text-align:left;
   font-size: 30px; /* 폰트 크기 조정 */
   color: rgba(0, 0, 0, 0.817);
   width: 600px;
   margin-left: 50px;
+  margin-top:30px;
 }
 
 
