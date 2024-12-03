@@ -107,14 +107,6 @@ body {
   padding: 0;
 }
   
-
-  @keyframes bgColor-time-change {
-    0%   {background-color: rgb(255, 255, 250);}
-    25%  {background-color: #d8eaff;}
-    50%  {background-color: rgb(202, 235, 255);}
-    75%  {background-color: rgb(195, 232, 255);}
-    100% {background-color: rgb(195, 234, 255);}
-  }
   
 .young{
     font-family: "Young Serif", serif;
@@ -136,10 +128,21 @@ body {
   background-size: cover; /* 배경 이미지를 요소 크기에 맞춤 */
   background-position: center; /* 배경 이미지의 위치를 가운데로 설정 */
   background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
-  filter: pixel;
 }
 
-  
+.firework-button {
+  color:rgb(255, 255, 255);
+  background-color: rgb(255, 191, 0);
+  width: 300px;
+  height: auto;
+  font-size: 30px;
+  position: fixed;
+  bottom: 40px; /* Distance from the bottom of the page */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset to truly center */
+  margin:0;
+}
+
   
   
 h1{
@@ -154,64 +157,80 @@ h3{
     
   }
 
-  @media (max-width: 650px) {
-    h1 {
-      font-size: 60px;
-    }
-  }
-
-  @media (max-width: 650px) {
-    body {
-      animation-fill-mode: none;
-   }
-  }
-
-  @media (max-width:700px) {
-    img {
-      filter:saturate(150%) contrast(70%) brightness(120%) ;
-    }
-  }
 
 
 
-@media (min-width: 768px) {
-  img{
-    filter:blur() 40px;
-  }
+
+
+.firework {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: expand-fade 2s ease-out infinite;
 }
 
-/* Desktop breakpoint */
-@media (min-width: 992px) {
-  body {
-    font-size: 50px;
+.firework-1 {
+  top: 50%; /* 중간 */
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  animation-delay: 0s;
+  background-color: rgb(252, 102, 8);
+}
+
+.firework-2 {
+  top: 90%; /* 하단 */
+  left: 30%;
+  transform: translate(-50%, -50%);
+  max-width: 120px;
+  max-height: 120px;
+  animation-delay: 0.3s;
+  background-color: rgb(252, 8, 118);
+}
+
+.firework-3 {
+  top: 40%; /* 상단과 중간 사이 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  animation-delay: 0.6s;
+  background-color: rgb(134, 252, 8);
+}
+
+.firework-4 {
+  top: 70%; /* 하단에서 살짝 위 */
+  left: 80%;
+  transform: translate(-50%, -50%);
+  max-width: 70px;
+  max-height: 70px;
+  animation-delay: 0.9s;
+  background-color: rgb(8, 171, 252);
+}
+
+.firework-5 {
+  top: 30%; /* 상단에서 살짝 아래 */
+  left: 96%;
+  transform: translate(-50%, -50%);
+  max-width: 100px;
+  max-height: 100px;
+  animation-delay: 1.2s;
+  background-color: rgb(8, 252, 211);
+}
+
+@keyframes expand-fade {
+  0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
   }
-}
-
-/* Wide screen breakpoint */
-@media (min-width: 1200px) {
-  body {
-    font-size: 60px;
+  50% {
+      opacity: 0.8;
   }
-}
-
-
-
-.image-container {
-    margin-top: 5%; 
-    display: flex; /* 컨테이너를 플렉스 박스로 설정 */
-    flex-direction: column; /* 헤더를 위에 두고 이미지와 설명을 아래에 배치 */
-    align-items: center; /* 중앙 정렬 */
-}
-
-.image {
-    width: 1000px; /* px 단위로 설정 */
-    height: auto; /* 비율 유지 */
-    overflow: hidden; /* 자식 요소가 부모 크기를 넘지 않도록 */
-}
-
-.image img {
-    width: 100%; /* 부모 요소의 너비에 맞춤 */
-    height: auto; /* 비율 유지 */
-    margin-top: 30px;
-    object-fit: cover; /* 이미지 비율 유지 */
+  100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+  }
 }
